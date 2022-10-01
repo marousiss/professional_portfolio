@@ -1,0 +1,354 @@
+:root {
+    --hover-color: darkgoldenrod;
+    --hover-opacity: 0.5;
+}
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element Selectors */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:rgb(242, 241, 241)
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    color: whitesmoke;
+    background-color: darkgrey;
+    background-image: linear-gradient(to bottom right, black, white);
+    width: 100%;
+}
+
+header h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+header nav {
+    display: flex;
+    flex: 50%;
+    justify-content: flex-end;
+    align-content: center;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+header nav a {
+    color: black;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 8px 14px;
+}
+   
+   /* Change color on hover*/
+header nav a:hover {
+    color: var(--hover-color);
+}
+   
+main {
+    margin: 5px;
+}
+
+footer {
+    padding: 1px;
+    color: white;
+    background-color: gray;
+    text-align: center;
+}
+   
+p {
+    font-size: 17px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+h2 {
+    padding: 0px;
+    margin: 3px;
+    font-size: 25px;
+}
+
+ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+li {  
+    display: flex;
+    flex-wrap: nowrap;
+    width: 25%;
+    padding: 20px;
+}
+
+ul li a {
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: underline;
+    color: black;
+}
+
+
+ul li a:hover {
+    color: var(--hover-color);
+}
+
+
+/* Class selectors*/
+.photo {
+    width: 115px;
+    height: 115px;
+    background-color: white; 
+    margin: 5px;
+    border-radius: 12px;
+}
+
+.photo>img{
+    width: 115px;
+    height: 115px;
+    border-radius: 12px;
+   
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.flex-item-left {
+    flex: 10%;
+    padding-right: 20px;
+    border-right: 5px solid grey;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* main rows to the right */
+.flex-item-right {
+    flex: 80%;
+    padding-left: 20px;
+    
+}
+/* my bio section */
+.right {
+    width: 80%;
+    
+}
+
+/* Projects container*/
+.myprojects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+ 
+}
+
+/* projects */
+.proj {
+    position: relative;
+    width: 49%;
+    height: 200px; 
+    border: 1px solid black; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+/* Posisioning absolute*/
+.absolute {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.absolute a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;   
+}
+
+.absolute a:hover {
+    text-decoration: underline;
+}
+
+.contactinfo {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* id selectors */
+#proj1 {
+    flex: 0 0 100%;
+    height: 350px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid darkgoldenrod;
+}
+
+#proj1:hover {
+    opacity: var(--hover-opacity);
+}
+
+#proj2 {
+    background-image: url("../images/programmer-1653351_960_720.png");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid darkgoldenrod;
+}
+
+#proj2>div {
+    width: 150px;
+}
+
+#proj2:hover {
+    opacity: var(--hover-opacity);
+}
+
+#proj3 {
+    background-image: url("../images/pexels-pixabay-270348.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid darkgoldenrod;
+}
+
+#proj3:hover {
+    opacity: var(--hover-opacity);
+}
+
+#proj4 {
+    background-image: url("../images/background-2462431_960_720.png");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid darkgoldenrod;
+}
+
+#proj4:hover {
+    opacity: var(--hover-opacity);
+}
+
+#proj5 {
+    background-image: url("../images/icon-1379228_960_720.png");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid darkgoldenrod;
+}
+
+#proj5:hover {
+    opacity: var(--hover-opacity);
+}
+
+/* Medium devices  */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    header nav a {
+        color: white;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: blueviolet;
+    }
+
+    li {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 90%;
+        align-content: center;
+        align-items: center; 
+        background-color: yellow;
+    }
+
+
+}
+
+/* small devices */
+@media screen and (max-width: 653px) {
+    header, nav, .row {
+        flex-direction: column;
+        /*flex-wrap: nowrap;*/
+
+        width: 100%;
+    }
+
+    nav{
+        justify-content: flex-start;
+    }
+
+    .flex-item-left {
+        border-right: 0px;
+        border-bottom: 5px solid grey;
+    }
+    
+    .left {
+        flex-direction: row;
+        align-items: flex-start;    
+    }
+
+    .flex-item-right {
+        width: 100%;
+    }
+
+    .proj {
+        width: 100%;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        align-items: center;
+        background-color: red;
+    }
+    
+    li {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        align-content: center;
+        align-items: center; 
+        background-color: green;
+    }
+
+    
+}
+
+
+
