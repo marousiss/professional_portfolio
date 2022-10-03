@@ -16,9 +16,8 @@ To access the webpage portfolio click on the followin link:
 
 Webpage screenshots:
 
-![Screenshot 1]()
-
-![Screenshot 1]()
+![Screenshot 1](./assets/images/screenshot-01.png)
+![Screenshot 1](./assets/images/screenshot-02.png)
 
 ## Credits
 
