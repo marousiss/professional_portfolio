@@ -47,12 +47,12 @@ header nav a {
     font-size: 20px;
     padding: 8px 14px;
 }
-   
-   /* Change color on hover*/
+
+/* Change color on hover*/
 header nav a:hover {
     color: var(--hover-color);
 }
-   
+
 main {
     margin: 5px;
 }
@@ -63,7 +63,7 @@ footer {
     background-color: gray;
     text-align: center;
 }
-   
+
 p {
     font-size: 17px;
     margin-right: 25px;
@@ -118,7 +118,7 @@ ul li a:hover {
     width: 115px;
     height: 115px;
     border-radius: 12px;
-   
+
 }
 
 
@@ -160,7 +160,7 @@ ul li a:hover {
     flex-wrap: wrap;
     width: 80%;
     justify-content: space-between;
- 
+
 }
 
 /* projects */
@@ -185,13 +185,13 @@ ul li a:hover {
     position: absolute;
     bottom: 8px;
     left: 8px;
-    width: 125px;
+    width: 126px;
     height: 40px;
     background-color: white;
     color: black;
     border-radius: 10px;
     text-align: center;
-    padding: 8px;
+    padding: 5px;
 }
 
 .absolute a {
@@ -213,17 +213,25 @@ ul li a:hover {
 
 
 /* id selectors */
-
 #proj1 {
-    flex: 0 0 100%;
-    height: 350px;
+  flex: 0 0 100%;
+  height: 350px;
+  background-image: url("../images/cuisine-and-recipes.png");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid darkgoldenrod;
+}
+
+#proj2 {
+    /*flex: 0 0 100%;
+    height: 350px; */
     background-image: url("../images/movie-randomizer.jpg");
     background-size: cover;
     background-position: center;
     border: 3px solid darkgoldenrod;
 }
 
-#proj2 {
+#proj3 {
     /*flex: 0 0 100%;
     height: 350px; */
     background-image: url("../images/weather-dashboard.jpg");
@@ -232,20 +240,20 @@ ul li a:hover {
     border: 3px solid darkgoldenrod;
 }
 
-#proj3 {
+#proj4 {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
     border: 3px solid darkgoldenrod;
 }
-
+/*
 #proj4 {
     background-image: url("../images/programmer-1653351_960_720.png");
     background-size: cover;
     background-position: center;
     border: 3px solid darkgoldenrod;
 }
-
+*/
 #proj5 {
     background-image: url("../images/timed-code-quiz.jpg");
     background-size: cover;
