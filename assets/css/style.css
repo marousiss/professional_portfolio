@@ -217,9 +217,26 @@ ul li a:hover {
 
 
 /* id selectors */
+#proj0 {
+  flex: 0 0 100%;
+  height: 350px;
+  background-image: url("../images/movie-lover.png");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid darkgoldenrod;
+}
+
+/*
 #proj1 {
   flex: 0 0 100%;
   height: 350px;
+  background-image: url("../images/cuisine-and-recipes.png");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid darkgoldenrod;
+}
+*/
+#proj1 {
   background-image: url("../images/cuisine-and-recipes.png");
   background-size: cover;
   background-position: center;
